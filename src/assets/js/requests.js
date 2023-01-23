@@ -70,23 +70,12 @@ async function del(url = '') {
 
 
 async function login(data) {
-    const data = {
-        'username' : 'USer2',
-        'password' : 'secure',
-    }
-
     const res = await post('login', data).then((res) => {
         console.log(res);
     })
 }
 
 async function register(data) {
-    const data = {
-        'username' : 'USer2',
-        'first_name' : 'One',
-        'last_name' : 'Two',
-        'password' : 'secure',
-    }
     
     const res = await post('register', data).then((res) => {
         console.log(res);
@@ -94,9 +83,6 @@ async function register(data) {
 }
 
 async function validation_username(data) {
-    const data = {
-        'user_name' : 'USer2',
-    }
     
     const res = await post('validation_username', data).then((res) => {
         console.log(res);
@@ -154,7 +140,7 @@ async function deleteASubscription([data]) {
 }
 
 async function updateProgress(data) {
-    const data = {
+     data = {
         'userID' : 1,
         'courseID' : 1,
         'progress' : 12
