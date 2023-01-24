@@ -1,0 +1,43 @@
+/*
+Custom CSS for TemplateMo 561 Purple Buzz
+
+https://templatemo.com/tm-561-purple-buzz
+
+*/
+
+.background_image{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../img/banner-bg-01.jpg);
+    background-repeat:no-repeat;    
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content: left;
+    align-items:flex-start;
+}
+
+.imput_form{
+    width : 20%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_and_register_buttons{
+    display: flex;
+}
+
+.imput_register_form{
+    width : 20%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+

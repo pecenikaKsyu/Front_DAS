@@ -1,0 +1,20 @@
+php_value post_max_size 64M
+
+Options -Indexes
+
+php_value error_reporting 2147483647
+php_value display_errors 1
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^www\.docsite\.com [NC]
+RewriteRule ^(.*)$ http://docsite.com/$1 [L,R=302]
+
+
+RewriteRule ^(\/?template\/..)(\/[a-z,0-9]+)(\.php)$    "/"   [NC]
+
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-d
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
+RewriteCond %{REQUEST_URI} !.(css|gif|ico|jpg|js|png|swf|txt)$
+#RewriteRule ^(.+)$ /index.php?rwr_get_iprm=$1
+RewriteRule ^.+\.?(php|index\.html|\/?).?$ /index.php

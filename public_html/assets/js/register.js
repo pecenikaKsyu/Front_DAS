@@ -1,0 +1,39 @@
+$(document).ready(function(){
+    $('#recaptcha').on('checkEmail', function(event){
+		event.preventDefault();
+		$.ajax({
+		url:"../../send_email.php",
+		method:"POST",
+		data:$(this).serialize(),
+		dataType:"json",
+		success:function(data){
+		if(data.error){
+			alert(data.message);
+		}
+		else{
+			alert(data.message);
+		}
+		},
+		})
+	});
+});
+
+$(document).ready(function(){
+    $('#recaptcha').on('register', function(event){
+		event.preventDefault();
+		$.ajax({
+		url:"../../auth.php",
+		method:"POST",
+		data:$(this).serialize(),
+		dataType:"json",
+		success:function(data){
+		if(data.error){
+			alert(data.message);
+		}
+		else{
+			alert(data.message);
+		}
+		},
+		})
+	});
+});

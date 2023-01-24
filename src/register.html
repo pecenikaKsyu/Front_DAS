@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>E-Learning</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="assets/js/register.js"></script>
+        <!-- Load Require CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font CSS -->
+        <link href="assets/css/boxicon.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+        <!-- Load Tempalte CSS -->
+        <link rel="stylesheet" href="assets/css/templatemo.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/custom.css">
+    </head>
+    <body>
+        <div class="background_image">
+            <div class="imput_register_form">
+                <form class="login-form row" method="post" id = "recaptcha">
+                    <a class="navbar-brand h1">
+                        <i class='bx round-e-mobiledata bx-sm text-dark'></i>
+                        <span class="text-dark h1">E - </span> <span class="text-primary h1">Learning</span>
+                    </a>
+                    <div class="col-12">
+                        <div class="form-floating mb-4">
+                            <input type="text" class="form-control form-control-lg light-300" id="Username" name="Username" placeholder="Username">
+                            <label for="floatingUsername light-300">Username</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating mb-4">
+                            <input type="text" class="form-control form-control-lg light-300" id="FirstName" name="FirstName" placeholder="First Name">
+                            <label for="floatingUsername light-300">First Name</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating mb-4">
+                            <input type="text" class="form-control form-control-lg light-300" id="LastName" name="LastName" placeholder="Last Name">
+                            <label for="floatingUsername light-300">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating mb-4">
+                            <input type="text" class="form-control form-control-lg light-300" id="Email" name="Email" placeholder="Email">
+                            <label for="floatingPassword light-300">Email</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating mb-4">
+                            <input type="password" class="form-control form-control-lg light-300" id="Password" name="Password" placeholder="Password">
+                            <label for="floatingPassword light-300">Password</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating mb-4">
+                            <input type="password" class="form-control form-control-lg light-300" id="Password1" name="Password1" placeholder="Password">
+                            <label for="floatingPassword light-300">Password</label>
+                        </div>
+                    </div>
+                    <div class="g-recaptcha" data-sitekey="6Ldc4iEkAAAAAMNp9rUBVGv7636T9D6HtRxVz2dI" ></div>
+                    <!-- <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4" id="checkEmail" name = "checkEmail" type="submit">Check email</a> -->
+                    <!-- <div class="col-12">
+                        <div class="form-floating mb-4">
+                            <input type="text" class="form-control form-control-lg light-300" id="floatingEmailValidation" name="emailValidation" placeholder="Write the code from your eMail">
+                            <label for="floatingPassword light-300">Write the code from your eMail</label>
+                        </div>
+                    </div> -->
+                    <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4" id = "submit" name = "submit" type="submit">Register</a>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
